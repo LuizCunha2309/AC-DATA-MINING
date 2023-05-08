@@ -5,7 +5,7 @@ from sklearn.metrics import mean_squared_error, r2_score
 
 
 # Carregando a base de dados
-df = pd.read_csv('ethereum_price.csv', thousands=',').replace(
+df = pd.read_csv('https://raw.githubusercontent.com/LuizCunha2309/AC-DATA-MINING/main/eth_price/eth_price.csv', thousands=',').replace(
     {'Price': '[$,]'}, {'Price': ''}, regex=True
     ).astype({'Price': 'float'})
 
